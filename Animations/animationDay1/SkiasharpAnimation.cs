@@ -11,19 +11,24 @@ namespace Animations.animationDay1
 {
     public class SkiasharpAnimation : ContentPage
     {
-        
-        
-        
+        SKCanvasView c;
+        TapGestureRecognizer tapRecognizer;
+
+
         public SkiasharpAnimation()
         {
-            SKCanvasView c = new SKCanvasView();
+            Grid g = new Grid();
+            c = new SKCanvasView ();
             c.PaintSurface += OnPaintSurface;
+            tapRecognizer = new TapGestureRecognizer();
+            tapRecognizer.Tapped += OnTapped;
 
-            //var tapRecognizer = new TapGestureRecognizer();
-            //tapRecognizer.Tapped += OnTapped;
-            //c.GestureRecognizers.Add(tapRecognizer);
+            c.GestureRecognizers.Add(tapRecognizer);
 
-            Content = c;
+            Content = g;
+            g.Children.Add(c);
+          
+            
         }
 
         protected void OnPaintSurface(Object o, SKPaintSurfaceEventArgs args)
@@ -34,14 +39,20 @@ namespace Animations.animationDay1
             var height = info.Height;
             var width = info.Width;
 
-            var rect = SKRect.Create(40, 40, 20, 40);
+            var rect = SKRect.Create( width / 2, height / 2, 20, 40);
             using(var paint = new SKPaint())
+            {
                 canvas.DrawRect(rect, paint);
+                canvas.DrawText($"{height} X {width} ", width / 2, height / 2, paint);
+            }
             
         }
-        //protected void OnTapped(Object o, EventArgs args)
-        //{
-
-        //}
+        protected async void OnTapped(Object o, EventArgs args)
+        {
+            tapRecognizer.Tapped -= OnTapped;
+            await c.RelRotateTo(360, 8000);
+            tapRecognizer.Tapped += OnTapped;
+        }
+      
     }
 }
