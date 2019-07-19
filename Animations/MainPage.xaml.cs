@@ -17,5 +17,7 @@ namespace Animations
         {
             InitializeComponent();
         }
+
+        
     }
 }

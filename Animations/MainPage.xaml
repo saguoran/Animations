@@ -6,11 +6,10 @@
              mc:Ignorable="d"
              x:Class="Animations.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <TableView>
+        <TableSection Title="Simple Animation">
+            <TextCell/>
+        </TableSection>
+    </TableView>
 
 </ContentPage>
