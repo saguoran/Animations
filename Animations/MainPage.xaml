@@ -3,13 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d1="clr-namespace:Animations.animationDay1"
+             xmlns:local ="clr-namespace:Animations"
              mc:Ignorable="d"
              x:Class="Animations.MainPage">
 
-    <TableView>
-        <TableSection Title="Simple Animation">
-            <TextCell/>
-        </TableSection>
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection Title="Animation">
+                <TextCell Text="Label animation" Detail="Rotation animation" 
+                          Command="{Binding NavigateCommand}" 
+                          CommandParameter="{x:Type d1:AnimationPage}"/>
+                <TextCell Text="Label Multiple animation" Detail="async multiple animation and animation stack"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d1:MultipleAnimation}"/>
+                <TextCell Text="Infinite animation" Detail="async multiple animation and animation stack"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d1:InfiniteAnimation}"/>
+                <TextCell Text="SkiaSharp canvas animation" Detail="simple skiaSharp canvas animation"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d1:SkiasharpAnimation}"/>
+            </TableSection>
+        </TableRoot>
     </TableView>
 
 </ContentPage>

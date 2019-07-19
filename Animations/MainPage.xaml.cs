@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace Animations
@@ -16,8 +17,12 @@ namespace Animations
         public MainPage()
         {
             InitializeComponent();
+            NavigateCommand = new Command<Type>(async (Type pageType) => {
+                Page page = Activator.CreateInstance(pageType) as Page;
+                await Navigation.PushAsync(page);
+            });
+            BindingContext = this;
         }
-
-        // test test dasfasd test
+        public ICommand NavigateCommand { private set; get; }
     }
 }
