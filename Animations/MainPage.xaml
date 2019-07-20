@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d1="clr-namespace:Animations.animationDay1"
+             xmlns:d2="clr-namespace:Animations.DesignDay2"
              xmlns:local ="clr-namespace:Animations"
              mc:Ignorable="d"
              x:Class="Animations.MainPage">
@@ -23,6 +24,17 @@
                 <TextCell Text="SkiaSharp canvas animation" Detail="simple skiaSharp canvas animation"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type d1:SkiasharpAnimation}"/>
+            </TableSection>
+            <TableSection Title="Designs">
+                <TextCell Text="Tab Page" Detail="simple tabbed page with background color"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d2:SimpleTabbedPage}"/>
+                <TextCell Text="Frame example" Detail="Frame example"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d2:FrameSample}"/>
+                <TextCell Text="ImageButton Test" Detail="ImageButton preview"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d2:ImageButtonTest}"/>
             </TableSection>
         </TableRoot>
     </TableView>
