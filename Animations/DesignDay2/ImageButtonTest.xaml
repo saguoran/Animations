@@ -11,7 +11,7 @@
         <FlexLayout Direction="Column" AlignItems="Center">
             <Label Text="something" BackgroundColor="Beige" WidthRequest="200" HeightRequest="60"/>
             <local:ImageButton ButtonText="Click me" Source="{imgext:ImageResource Source=Animations.img.androidicon.png}"
-             WidthRequest="500" HeightRequest="200"/>
+             WidthRequest="200" HeightRequest="100"/>
         </FlexLayout>
                 <!--VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"-->

@@ -35,6 +35,9 @@
                 <TextCell Text="ImageButton Test" Detail="ImageButton preview"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type d2:ImageButtonTest}"/>
+                <TextCell Text="SkiaControl simple" Detail="SkiaControl simple first"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d2:SkiaControlDesign}"/>
             </TableSection>
         </TableRoot>
     </TableView>

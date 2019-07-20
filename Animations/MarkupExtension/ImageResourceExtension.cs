@@ -17,7 +17,6 @@ namespace Animations.MarkupExtension
                 return null; 
             var imageSource = ImageSource.FromResource(Source, typeof(ImageResourceExtension).GetTypeInfo().Assembly);
             return imageSource;
-            
         }
     }
 }
