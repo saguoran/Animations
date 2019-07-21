@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cus="clr-namespace:Animations.CustomRenderer"
+             mc:Ignorable="d"
+             x:Class="Animations.DesignDay2.TappedView2rdTry">
+    <ContentView.Content>
+        <FlexLayout Direction="Column" JustifyContent="Start">
+            <ScrollView FlexLayout.Basis="10%" Orientation="Horizontal" Padding="0" HorizontalScrollBarVisibility="Never">
+                <FlexLayout >
+                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                </FlexLayout>
+            </ScrollView>
+            <Frame FlexLayout.Grow="1" Padding="0" Margin="0">
+                <cus:EditorNoUnderline FlexLayout.Basis="90%" Text="ljalkdfj jaslkfdjkla sjdf klsajflkjasdlkfjldksajfkldsajfkljasdklfjkalsdjfklas jkdsajfkladsjdfkl jaskl "
+                   FontSize="Large" Margin="0" />
+            </Frame>
+        </FlexLayout>
+        <!--<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <ScrollView HorizontalScrollBarVisibility="Always" VerticalScrollBarVisibility="Never">
+                    <StackLayout x:Name="stackLayout" Orientation="Horizontal" HorizontalOptions="FillAndExpand"/>
+            </ScrollView>
+            <Frame Grid.Row="1"  Padding="0" IsClippedToBounds="False">
+                <BoxView BackgroundColor="Aquamarine"/>
+            </Frame>
+        </Grid>-->
+    </ContentView.Content>
+</ContentView>

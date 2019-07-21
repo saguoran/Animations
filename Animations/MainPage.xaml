@@ -38,6 +38,9 @@
                 <TextCell Text="SkiaControl simple" Detail="SkiaControl simple first"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type d2:SkiaControlDesign}"/>
+                <TextCell Text="TappedView" Detail="TappedView 2rdTry"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d2:MyTappedView2rdTryHost}"/>
             </TableSection>
         </TableRoot>
     </TableView>
