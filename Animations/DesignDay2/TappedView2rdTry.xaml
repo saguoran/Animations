@@ -7,23 +7,32 @@
              mc:Ignorable="d"
              x:Class="Animations.DesignDay2.TappedView2rdTry">
     <ContentView.Content>
+            <Frame Padding="0">
         <FlexLayout Direction="Column" JustifyContent="Start">
-            <ScrollView FlexLayout.Basis="10%" Orientation="Horizontal" Padding="0" HorizontalScrollBarVisibility="Never">
-                <FlexLayout >
-                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
-                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
-                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
-                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
-                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
-                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
-                    <Frame Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
-                </FlexLayout>
-            </ScrollView>
-            <Frame FlexLayout.Grow="1" Padding="0" Margin="0">
-                <cus:EditorNoUnderline FlexLayout.Basis="90%" Text="ljalkdfj jaslkfdjkla sjdf klsajflkjasdlkfjldksajfkldsajfkljasdklfjkalsdjfklas jkdsajfkladsjdfkl jaskl "
+                <ScrollView  FlexLayout.Basis="10%" Orientation="Horizontal" Padding="0">
+                <!--<FlexLayout >
+                    <Frame HasShadow="True" IsClippedToBounds="False"  Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame HasShadow="False" IsClippedToBounds="False" Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame HasShadow="False" IsClippedToBounds="False" Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame HasShadow="False" IsClippedToBounds="False" Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame HasShadow="False" IsClippedToBounds="False" Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame HasShadow="False" IsClippedToBounds="False" Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                    <Frame HasShadow="False" IsClippedToBounds="False" Padding="0" WidthRequest="200" Margin="1,0,1,0" BackgroundColor="Accent"/>
+                </FlexLayout>-->
+                <!--<FlexLayout>
+                        <Label  Text="Tab" BackgroundColor="Accent" WidthRequest="200" Margin="1,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label  Text="Tab" BackgroundColor="Accent" WidthRequest="200" Margin="1,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label  Text="Tab" BackgroundColor="Accent" WidthRequest="200" Margin="1,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label  Text="Tab" BackgroundColor="Accent" WidthRequest="200" Margin="1,0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </FlexLayout>-->
+                    <FlexLayout x:Name="TabeContainer" />
+                </ScrollView>
+            <!--<Frame Padding="0" >-->
+                    <cus:EditorNoUnderline x:Name="editorNoUnderline" FlexLayout.Grow="1"  FlexLayout.Basis="90%" Text="ljalkdfj jaslkfdjkla sjdf klsajflkjasdlkfjldksajfkldsajfkljasdklfjkalsdjfklas jkdsajfkladsjdfkl jaskl "
                    FontSize="Large" Margin="0" />
-            </Frame>
+            <!--</Frame>-->
         </FlexLayout>
+            </Frame>
         <!--<Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
