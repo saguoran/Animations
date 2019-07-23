@@ -34,13 +34,15 @@ namespace Animations.DesignDay2
                 }
                 );
             });
-            tapRecognizer.Tapped += (o, args) => {
+            tapRecognizer.Tapped += async (o, args) => {
+                await editorNoUnderline.FadeTo(0, 100);
                 Label selectedLabel = TabeContainer.Children.Where(l => l.ClassId == selected).FirstOrDefault() as Label;
                 selectedLabel.BackgroundColor = Color.Aqua;
                 Label label = o as Label;
                 selected = label.ClassId;
                 label.BackgroundColor = Color.Accent;
                 editorNoUnderline.Text = notes.Find(note => note.Id == label.ClassId).Detail;
+                await editorNoUnderline.FadeTo(1, 100);
             };
             selected = notes[0].Id;
             TabeContainer.Children[0].BackgroundColor = Color.Accent;

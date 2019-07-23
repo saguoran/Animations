@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mod="clr-namespace:Animations.DataModels"
+             xmlns:local="clr-namespace:Animations.DataBindingModel"
+             mc:Ignorable="d"
+             x:Class="Animations.DataBinding.DataBind2rd">
+    <ContentView.BindingContext>
+        <local:TitleDetailMode/>
+    </ContentView.BindingContext>
+  <ContentView.Content>
+        <Frame>
+            <FlexLayout Direction="Column">
+                <ListView FlexLayout.Basis="20%"  x:Name="listView" ItemsSource="{Binding Descriptions}" HorizontalScrollBarVisibility="Always" VerticalScrollBarVisibility="Never">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <FlexLayout  x:Name="container"  BackgroundColor="Accent" >
+                                    <Label Text="{Binding}"/>
+                                </FlexLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Editor FlexLayout.Basis="80%" FlexLayout.Grow="1"/>
+            </FlexLayout>
+        </Frame>
+  </ContentView.Content>
+</ContentView>

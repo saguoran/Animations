@@ -53,7 +53,7 @@ namespace Animations.DesignDay2
 
             InnerLabel.SetBinding(Label.TextProperty, new Binding("ButtonText", source: this));
             InnerImage.SetBinding(Image.SourceProperty, new Binding("Source", source: this));
-
+            
         }
     }
 }

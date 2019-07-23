@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vmod="clr-namespace:Animations.DataBindingModel"
+             mc:Ignorable="d"
+             x:Class="Animations.DataBinding.DataBind3rd">
+    <!--<ContentView.BindingContext>
+        <vmod:TitleDetailMode/>
+    </ContentView.BindingContext>-->
+  <ContentView.Content>
+      <Frame x:Name="root" BackgroundColor="Accent" Padding="0" IsClippedToBounds="False">
+            <FlexLayout Direction="Column">
+                <ScrollView FlexLayout.Basis="10%" BackgroundColor="Accent" Orientation="Horizontal">
+                    <!--<FlexLayout x:Name="Container" BindingContext="{Binding Descriptions}"/>-->
+                    <FlexLayout x:Name="Container"/>
+                </ScrollView>
+                <Frame BorderColor="Accent" FlexLayout.Basis="90%" Padding="0" IsClippedToBounds="False" >
+                        <StackLayout Orientation="Horizontal" x:Name="DetailContainer" Padding="0" Spacing="0">
+                        </StackLayout>
+                    <!--</ScrollView>-->
+                </Frame>
+            </FlexLayout>
+        </Frame>
+  </ContentView.Content>
+</ContentView>

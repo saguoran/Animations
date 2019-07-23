@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cus="clr-namespace:Animations.MyCustomControls"
+             mc:Ignorable="d"
+             x:Class="Animations.MyCustomControls.UIControlHostXAML">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column">
+            <Label FlexLayout.Basis="10%" Text="Welcome to Xamarin.Forms!"/>
+            <cus:TabeView1st FlexLayout.Basis="90%" TabWidth="500" TabBGColor="#800" TabSelectedBGColor="080"  TabTextColor="#aaa"/>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

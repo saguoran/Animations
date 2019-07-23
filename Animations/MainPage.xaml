@@ -5,6 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d1="clr-namespace:Animations.animationDay1"
              xmlns:d2="clr-namespace:Animations.DesignDay2"
+             xmlns:bin="clr-namespace:Animations.DataBinding"
+             xmlns:Cus="clr-namespace:Animations.MyCustomControls"
              xmlns:local ="clr-namespace:Animations"
              mc:Ignorable="d"
              x:Class="Animations.MainPage">
@@ -41,6 +43,22 @@
                 <TextCell Text="TappedView" Detail="TappedView 2rdTry"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type d2:MyTappedView2rdTryHost}"/>
+                <TextCell Text="TappedView hardcoded" Detail="TappedView 2rdTry hardcoded"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d2:HardcodedTabViewHost}"/>
+            </TableSection>
+            <TableSection Title="Databinding">
+                <TextCell Text="Databinding XAML" Detail="Databinding from XAML contentPage"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type bin:DatabindHost}"/>
+            </TableSection>
+            <TableSection Title="Custom UI Controls">
+                <TextCell Text="Custom TabView control CSharp" Detail="Custom TabView control 2rd from C# contentPage"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type Cus:UIControlHost}"/>
+                <TextCell Text="Custom TabView control XAML" Detail="Custom TabView control 2rd from XAML contentPage"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type Cus:UIControlHostXAML}"/>
             </TableSection>
         </TableRoot>
     </TableView>
