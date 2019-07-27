@@ -8,24 +8,15 @@
              xmlns:bin="clr-namespace:Animations.DataBinding"
              xmlns:Cus="clr-namespace:Animations.MyCustomControls"
              xmlns:local ="clr-namespace:Animations"
+             xmlns:syncFusion="clr-namespace:Animations.SyncFusion"
              mc:Ignorable="d"
              x:Class="Animations.MainPage">
-
     <TableView Intent="Menu">
         <TableRoot>
-            <TableSection Title="Animation">
-                <TextCell Text="Label animation" Detail="Rotation animation" 
-                          Command="{Binding NavigateCommand}" 
-                          CommandParameter="{x:Type d1:AnimationPage}"/>
-                <TextCell Text="Label Multiple animation" Detail="async multiple animation and animation stack"
+            <TableSection Title="Syncfusion Calendar">
+                <TextCell Text="Syncfusion Calendar with lisence" Detail="Syncfusion Calendar with lisence 1st try"
                           Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type d1:MultipleAnimation}"/>
-                <TextCell Text="Infinite animation" Detail="async multiple animation and animation stack"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type d1:InfiniteAnimation}"/>
-                <TextCell Text="SkiaSharp canvas animation" Detail="simple skiaSharp canvas animation"
-                          Command="{Binding NavigateCommand}"
-                          CommandParameter="{x:Type d1:SkiasharpAnimation}"/>
+                          CommandParameter="{x:Type syncFusion:SyncfusionCalendar}"/>
             </TableSection>
             <TableSection Title="Designs">
                 <TextCell Text="Tab Page" Detail="simple tabbed page with background color"
@@ -41,6 +32,7 @@
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type d2:SkiaControlDesign}"/>
                 <TextCell Text="TappedView" Detail="TappedView 2rdTry"
+                          
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type d2:MyTappedView2rdTryHost}"/>
                 <TextCell Text="TappedView hardcoded" Detail="TappedView 2rdTry hardcoded"
@@ -48,9 +40,12 @@
                           CommandParameter="{x:Type d2:HardcodedTabViewHost}"/>
             </TableSection>
             <TableSection Title="Databinding">
-                <TextCell Text="Databinding XAML" Detail="Databinding from XAML contentPage"
+                <TextCell Text="Databinding TabView XAML" Detail="Databinding TabView Title and Detail from XAML contentPage"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type bin:DatabindHost}"/>
+                <TextCell Text="Databinding GridImageView XAML" Detail="Databinding GridImageView from XAML contentPage"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type bin:GridImageXAML}"/>
             </TableSection>
             <TableSection Title="Custom UI Controls">
                 <TextCell Text="Custom TabView control CSharp" Detail="Custom TabView control 2rd from C# contentPage"
@@ -59,6 +54,20 @@
                 <TextCell Text="Custom TabView control XAML" Detail="Custom TabView control 2rd from XAML contentPage"
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type Cus:UIControlHostXAML}"/>
+            </TableSection>
+            <TableSection Title="Animation">
+                <TextCell Text="Label animation" Detail="Rotation animation" 
+                          Command="{Binding NavigateCommand}" 
+                          CommandParameter="{x:Type d1:AnimationPage}"/>
+                <TextCell Text="Label Multiple animation" Detail="async multiple animation and animation stack"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d1:MultipleAnimation}"/>
+                <TextCell Text="Infinite animation" Detail="async multiple animation and animation stack"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d1:InfiniteAnimation}"/>
+                <TextCell Text="SkiaSharp canvas animation" Detail="simple skiaSharp canvas animation"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type d1:SkiasharpAnimation}"/>
             </TableSection>
         </TableRoot>
     </TableView>

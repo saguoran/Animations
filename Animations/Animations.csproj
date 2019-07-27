@@ -11,10 +11,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\1.png" />
+    <None Remove="img\2.png" />
+    <None Remove="img\3.png" />
+    <None Remove="img\4.png" />
+    <None Remove="img\5.png" />
+    <None Remove="img\6.png" />
+    <None Remove="img\7.png" />
+    <None Remove="img\8.png" />
     <None Remove="img\androidicon.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="img\1.png" />
+    <EmbeddedResource Include="img\2.png" />
+    <EmbeddedResource Include="img\3.png" />
+    <EmbeddedResource Include="img\4.png" />
+    <EmbeddedResource Include="img\5.png" />
+    <EmbeddedResource Include="img\6.png" />
+    <EmbeddedResource Include="img\7.png" />
+    <EmbeddedResource Include="img\8.png" />
     <EmbeddedResource Include="img\androidicon.png" />
   </ItemGroup>
 
@@ -22,6 +38,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="RestSharp" Version="106.6.10" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="17.2.0.36" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataForm" Version="17.2.0.36" />
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
   </ItemGroup>
@@ -34,6 +52,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DataBinding\DatabindHost.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DataBinding\GridImageXAML.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DataBinding\ImageGrid.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DesignDay2\ImageButton.xaml">
@@ -52,6 +76,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MyCustomControls\UIControlHostXAML.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SyncFusion\SyncfusionCalendar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

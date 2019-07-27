@@ -10,13 +10,13 @@
         <vmod:TitleDetailMode/>
     </ContentView.BindingContext>-->
   <ContentView.Content>
-      <Frame x:Name="root" BackgroundColor="Accent" Padding="0" IsClippedToBounds="False">
+      <Frame x:Name="root" BackgroundColor="Accent" Padding="0" IsClippedToBounds="True">
             <FlexLayout Direction="Column">
-                <ScrollView FlexLayout.Basis="10%" BackgroundColor="Accent" Orientation="Horizontal">
+                <ScrollView FlexLayout.Basis="20%" BackgroundColor="Accent" Orientation="Horizontal">
                     <!--<FlexLayout x:Name="Container" BindingContext="{Binding Descriptions}"/>-->
                     <FlexLayout x:Name="Container"/>
                 </ScrollView>
-                <Frame BorderColor="Accent" FlexLayout.Basis="90%" Padding="0" IsClippedToBounds="False" >
+                <Frame BorderColor="Accent" FlexLayout.Basis="80%" Padding="0" IsClippedToBounds="True" >
                         <StackLayout Orientation="Horizontal" x:Name="DetailContainer" Padding="0" Spacing="0">
                         </StackLayout>
                     <!--</ScrollView>-->

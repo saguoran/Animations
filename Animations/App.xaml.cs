@@ -8,6 +8,7 @@ namespace Animations
     {
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTI0MzU2QDMxMzcyZTMyMmUzMFhRaXVjU0VPVXoxbHBpTU90TGlmUjdNYzVYVWlnMTN3cFJsalQ1dFBMOEE9");
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());

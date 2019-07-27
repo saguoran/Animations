@@ -14,6 +14,8 @@ namespace Animations.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTI0MzU2QDMxMzcyZTMyMmUzMFhRaXVjU0VPVXoxbHBpTU90TGlmUjdNYzVYVWlnMTN3cFJsalQ1dFBMOEE9");
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

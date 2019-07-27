@@ -28,6 +28,8 @@ namespace Animations.UWP
         /// </summary>
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTI0MzU2QDMxMzcyZTMyMmUzMFhRaXVjU0VPVXoxbHBpTU90TGlmUjdNYzVYVWlnMTN3cFJsalQ1dFBMOEE9");
+
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
