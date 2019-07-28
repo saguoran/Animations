@@ -9,10 +9,19 @@
              xmlns:Cus="clr-namespace:Animations.MyCustomControls"
              xmlns:local ="clr-namespace:Animations"
              xmlns:syncFusion="clr-namespace:Animations.SyncFusion"
+             xmlns:forms="clr-namespace:Animations.CarouselViews"
              mc:Ignorable="d"
              x:Class="Animations.MainPage">
     <TableView Intent="Menu">
         <TableRoot>
+            <TableSection Title="Xamarin Form Carousel View">
+                <TextCell Text="Xamarin Form Carousel View 1st" Detail="Xamarin Form Carousel View 1st"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type forms:CarouselView1st}"/>
+                <TextCell Text="Xamarin Form Carousel View 2st" Detail="Xamarin Form Carousel View 2st"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type forms:ProductRegisterCardHost}"/>
+            </TableSection>
             <TableSection Title="Syncfusion Calendar">
                 <TextCell Text="Syncfusion Calendar with lisence" Detail="Syncfusion Calendar with lisence 1st try"
                           Command="{Binding NavigateCommand}"

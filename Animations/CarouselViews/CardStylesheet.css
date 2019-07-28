@@ -1,0 +1,59 @@
+﻿frame {
+	padding: 0;
+	border-color:gray;
+}
+
+.container {
+	background-color: sandybrown;
+}
+
+.container > * {
+	margin: 2;
+}
+
+.image_frame {
+	flex-basis: 45%;
+	background-color: firebrick;
+}
+
+.body_flex {
+	flex-basis: 10%;
+}
+
+.description_frame {
+	flex-basis: 25%;
+}
+
+.body_flex {
+	justify-content:center;
+}
+
+.child_1 {
+	flex-basis: 20%;
+}
+
+.title_frame {
+	flex-basis: 70%;
+	margin-left: 5;
+}
+
+.price_frame {
+	flex-basis: 50%;
+}
+
+button {
+	background-color: firebrick;
+}
+
+.bottom_flex {
+	flex-basis: 10%;
+	justify-content: space-around;
+}
+
+picker {
+	text-align:center;
+}
+
+.bottom_flex > *{
+	flex-basis: 40%;
+}

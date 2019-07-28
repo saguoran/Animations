@@ -9,6 +9,7 @@ namespace Animations.DataModels
         public long Id { get; set; }
         [JsonProperty("description")]
         public string Description { get; set; }
+        public string Title { get; set; }
         [JsonProperty("price")]
         public decimal Price { get; set; }
         [JsonProperty("imageurl")]

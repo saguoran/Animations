@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FFImageLoading.Forms.Platform;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,8 +21,9 @@ namespace Animations.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            CachedImageRenderer.Init();
             LoadApplication(new Animations.App());
+
         }
     }
 }

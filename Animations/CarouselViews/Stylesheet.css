@@ -1,0 +1,14 @@
+﻿outer_frame {
+	background-color: mediumpurple;
+}
+ProductRegisterCard {
+	background-color:bisque;
+	flex-basis: 70%;
+}
+.inner_frame {
+	background-color: aquamarine;
+	flex-basis: 30%;
+}
+frame {
+	padding:0;
+}

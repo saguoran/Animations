@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using PanCardView.Droid;
+using FFImageLoading.Forms.Platform;
 
 namespace Animations.Droid
 {
@@ -23,7 +25,11 @@ namespace Animations.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            //CardsViewRenderer.Preserve();
+            CachedImageRenderer.Init(true);
+            CachedImageRenderer.InitImageViewHandler();
             LoadApplication(new App());
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

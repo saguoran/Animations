@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FFImageLoading.Forms.Platform;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,7 +30,6 @@ namespace Animations.UWP
         public App()
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTI0MzU2QDMxMzcyZTMyMmUzMFhRaXVjU0VPVXoxbHBpTU90TGlmUjdNYzVYVWlnMTN3cFJsalQ1dFBMOEE9");
-
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }

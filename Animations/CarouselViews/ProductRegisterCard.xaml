@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:extension="clr-namespace:Animations.MarkupExtension"
+             xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="Animations.CarouselViews.ProductRegisterCard">
+    <ContentView.Resources>
+        <StyleSheet Source="/CarouselViews/CardStylesheet.css"/>
+        <Style TargetType="Frame">
+            <Setter Property="HasShadow" Value="False"/>
+            <Setter Property="BorderColor" Value="Transparent"/>
+        </Style>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <FlexLayout StyleClass="container"  Direction="Column" JustifyContent="Center" AlignContent="Center" >
+            
+            <Frame StyleClass="image_frame">
+                <!--<Image HorizontalOptions="Center" VerticalOptions="Center" Source="{extension:ImageResource Source=Animations.img.androidicon.png}"/>-->
+                <ffimage:CachedImage Source="resource://Animations.img.androidicon.png"/>
+            </Frame>
+            
+            
+            <FlexLayout StyleClass="body_flex">
+                <Frame StyleClass="child_1">
+                    <Picker>
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Category</x:String>
+                                <x:String>Car</x:String>
+                                <x:String>Cars</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                        <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                    </Picker>
+                </Frame>
+                <Frame StyleClass="title_frame">
+                    <Entry Placeholder="Title"/>
+                </Frame>
+            </FlexLayout>
+
+            <FlexLayout StyleClass="body_flex">
+                <Label StyleClass="child_1" FontSize="Medium" FontAttributes="Bold" Text="Price:" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                <Frame StyleClass="price_frame">
+                    <FlexLayout>
+                    <Entry Placeholder="Estimate" Keyboard="Numeric"/>
+                    <Label StyleClass="child_1" FontSize="Medium" Text="CAD" VerticalTextAlignment="Center"/>
+                    </FlexLayout>
+                </Frame>
+            </FlexLayout>
+
+            <Frame StyleClass="description_frame">
+                <Editor/>
+            </Frame>
+
+           
+
+            <FlexLayout  StyleClass="bottom_flex">
+                <Frame>
+                    <Button Text="Finish"/>
+                </Frame>
+                <Frame>
+                    <Button Text="Discard"/>
+                </Frame>
+            </FlexLayout>
+
+        </FlexLayout>
+    </ContentView.Content>
+</ContentView>
